@@ -1,0 +1,52 @@
+\\user 1
+
+if(board.minion.isAHit(1)||board.general.isAHit(1)||board.emperor.isAHit(1)){
+   jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\fire.gif")); // NOI18N
+    nanaBoysLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\fire.gif")); // NOI18N
+jLabel2.setText("Guesses : " + ++Mguesses);
+jLabel4.setText("Hits : " + ++Mhits);
+
+
+}else if(board.hits.isAHit(1)){}
+else{jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\splash.gif")); // NOI18N
+jLabel2.setText("Guesses : " + ++Mguesses);
+jLabel4.setText("Hits : " + Mhits);
+}
+    nanaBoysLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\splash.gif")); // NOI18N
+    }                                        
+
+jLabel62.setText("Status : " + board.fire(1));
+//jLabel2.setText("Guesses : " + ++Mguesses);
+//jLabel4.setText("Hits : " + ++Mhits);
+//jLabel3.setText("Enemy Ships Sunk : " + ++Msunk); 
+jLabel59.setText("Hits Taken : " + Nhits);
+jLabel60.setText("Friendly Ships Sunk : "+ Nsunk);
+
+    
+
+
+\\user 2
+
+if(board2.minion.isAHit(1)||board2.general.isAHit(1)||board2.emperor.isAHit(1)){
+nanaBoysLabels2.setText("Guesses : " + ++Nguesses);
+nanaBoysLabels4.setText("Hits : " + ++Nhits);
+
+   nanaBoys2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\fire.gif")); // NOI18N
+    jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\fire.gif")); // NOI18N
+}else if(board.hits.isAHit(1)){}
+else{
+nanaBoysLabels2.setText("Guesses : " + ++Nguesses);
+nanaBoysLabels4.setText("Hits : " + Nhits);
+
+nanaBoys2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\splash.gif")); // NOI18N}
+    jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sarthak\\Desktop\\kamikaze-kamikaze\\battleship\\graphics\\splash.gif")); // NOI18N
+    }                                        
+
+nanaBoysLabels62.setText("Status : " + board2.fire(1));
+//nanaBoysLabels2.setText("Guesses : " + ++Nguesses);
+//nanaBoysLabels4.setText("Hits : " + ++Nhits);
+//nanaBoysLabels3.setText("Enemy Ships Sunk : " + ++Nsunk); 
+nanaBoysLabels59.setText("Hits Taken : " + Mhits);
+nanaBoysLabels60.setText("Friendly Ships Sunk : "+ Msunk);
+    
+
